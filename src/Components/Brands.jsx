@@ -1,12 +1,18 @@
 import React from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Brands = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
    return (
      <div className="mt-6">
        <div class="px-6 py-16 mx-auto">
          <div class="">
            <div class="w-full lg:w-1/2 lg:ml-24">
-             <div className="lg:flex">
+             <div className="lg:flex" data-aos="fade-right">
                <svg
                  width="132"
                  height="61"
@@ -208,7 +214,7 @@ const Brands = () => {
                </svg>
              </div>
 
-             <div className='lg:flex'>
+             <div className="lg:flex" data-aos="fade-left">
                <svg
                  width="126"
                  height="61"

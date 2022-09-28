@@ -1,10 +1,16 @@
 import React from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const SavingAccount = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
    return (
-     <section className="container py-16 mx-auto">
-       <div className="w-full lg:w-1/2 lg:ml-24">
-         <div className="mt-10 ">
+     <section className="container px-2 py-16 mx-auto">
+       <div className=" w-4/5 lg:ml-24">
+         <div className="mt-10 text-center lg:text-start" data-aos="fade-right">
            <h1 className="text-lg font-semibold text-black mb-4">
              Saving Account
            </h1>
@@ -14,13 +20,13 @@ const SavingAccount = () => {
              money the right way
            </h1>
 
-           <p class="mt-4 text-xl w-2/3">
+           <p class="mt-4 text-xl w-full lg:w-2/3">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
              eiusmod tempor incididunt ut labore et dolore magna aliqua.
            </p>
 
-           <div className="flex justify-end items-center space-x-2 mr-7">
-             <a className="text-lg text-firstly cursor-pointer ml-6">
+           <div className="flex justify-end items-center space-x-2 ">
+             <a className="text-lg text-firstly cursor-pointer ml-10">
                All Features
              </a>
              <svg
@@ -38,8 +44,8 @@ const SavingAccount = () => {
            </div>
          </div>
 
-         <div className="lg:flex gap-5 mt-4">
-           <div>
+         <div className="lg:flex gap-5 mt-4 px-16 lg:px-0">
+           <div data-aos="slide-right">
              <svg
                width="214"
                height="215"
@@ -90,7 +96,7 @@ const SavingAccount = () => {
              <p className="text-lg text-black font-medium">New Laptop</p>
              <p className="text-gray-400 text-xs">400$</p>
            </div>
-           <div>
+           <div data-aos="slide-left">
              <svg
                width="214"
                height="215"
@@ -149,7 +155,7 @@ const SavingAccount = () => {
              <p className="text-lg text-black font-medium">Dream Bike</p>
              <p className="text-gray-400 text-xs">200$</p>
            </div>
-           <div>
+           <div data-aos="slide-right">
              <svg
                width="214"
                height="215"
@@ -196,7 +202,7 @@ const SavingAccount = () => {
              <p className="text-lg text-black font-medium">Holiday</p>
              <p className="text-gray-400 text-xs">14000$</p>
            </div>
-           <div>
+           <div data-aos="slide-left">
              <svg
                width="214"
                height="215"
@@ -255,7 +261,7 @@ const SavingAccount = () => {
              <p className="text-lg text-black font-medium">Camera</p>
              <p className="text-gray-400 text-xs">100$</p>
            </div>
-           <div>
+           <div data-aos="slide-left">
              <svg
                width="214"
                height="215"

@@ -1,12 +1,18 @@
 import React from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Tools = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
    return (
      <div className="mt-6">
        <div class="px-6 py-10 mx-auto">
          <div class="items-center lg:flex ">
            <div class="w-full lg:w-1/2 lg:ml-24">
-             <div class="lg:max-w-lg">
+             <div class="lg:max-w-lg" data-aos="slide-right">
                <h1 className="text-lg text-black mb-5">Tools</h1>
                <h1 class="text-3xl font-semibold text-gray-800  lg:text-6xl">
                  Seemless <br /> Integration
@@ -19,7 +25,7 @@ const Tools = () => {
              </div>
            </div>
 
-           <section className="lg:w-1/2 gap-y-6">
+           <section className="lg:w-1/2 gap-y-6" data-aos="slide-left">
              <div class="grid grid-cols-1 mt-8 gap-y-6 justify-items-start">
                <div className="flex justify-center items-center space-x-2 mr-3">
                  <svg

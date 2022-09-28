@@ -1,11 +1,20 @@
 import React from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Notification = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
    return (
      <div className="mt-6">
        <div class="px-6 py-16 mx-auto">
          <div class="items-center lg:flex ">
-           <div class="w-full lg:w-1/2 lg:ml-24">
+           <div
+             class="w-full lg:w-1/2 lg:ml-24 text-center lg:text-start"
+             data-aos="fade-right"
+           >
              <div class="lg:max-w-lg">
                <h1 className="text-lg text-black mb-5">Notifications</h1>
                <h1 class="text-3xl font-semibold text-gray-800  lg:text-6xl">
@@ -18,7 +27,7 @@ const Notification = () => {
                  Exercitation veniam consequat sunt nostrud amet.
                </p>
 
-               <div class="grid grid-cols-1 mt-8 gap-y-4 justify-items-start">
+               <div class="grid grid-cols-1 mt-8 gap-y-4 justify-items-center lg:justify-items-start">
                  <div className="flex justify-center items-center space-x-2 mr-3">
                    <svg
                      width="26"
@@ -110,7 +119,10 @@ const Notification = () => {
            </div>
 
            <section className="lg:w-1/2 gap-y-6">
-             <div class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6">
+             <div
+               class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6"
+               data-aos="slide-right"
+             >
                <div className="flex justify-center items-center gap-x-2">
                  <svg
                    width="51"
@@ -144,7 +156,10 @@ const Notification = () => {
                  </div>
                </div>
              </div>
-             <div class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6 ">
+             <div
+               class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6"
+               data-aos="slide-right"
+             >
                <div className="flex justify-center items-center gap-x-2">
                  <svg
                    width="51"
@@ -178,7 +193,10 @@ const Notification = () => {
                  </div>
                </div>
              </div>
-             <div class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6 ">
+             <div
+               class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6"
+               data-aos="slide-left"
+             >
                <div className="flex justify-center items-center gap-x-2">
                  <svg
                    width="51"
@@ -210,7 +228,10 @@ const Notification = () => {
                  </div>
                </div>
              </div>
-             <div class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6 ">
+             <div
+               class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6"
+               data-aos="slide-left"
+             >
                <div className="flex justify-center items-center gap-x-2">
                  <svg
                    width="51"
@@ -244,7 +265,10 @@ const Notification = () => {
                  </div>
                </div>
              </div>
-             <div class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6 ">
+             <div
+               class="flex items-center justify-start mt-6 lg:mt-0  p-2 shadow-lg w-4/5 rounded-lg bg-white mb-6"
+               data-aos="slide-up"
+             >
                <div className="flex justify-center items-center gap-x-2">
                  <svg
                    width="51"

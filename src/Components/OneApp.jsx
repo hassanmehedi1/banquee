@@ -1,7 +1,13 @@
 import React from 'react';
 import mobile from "../assets/mobile.png"
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const OneApp = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
    return (
      <div class="px-6 py-16 mx-auto">
        <div class="items-center lg:flex">
@@ -13,7 +19,10 @@ const OneApp = () => {
              </h1>
 
              <div className="grid grid-cols-1 mt-8 space-y-3 lg:space-y-0 lg:grid-cols-2  justify-evenly gap-x-32 gap-y-6">
-               <div className="card w-72 bg-base-100 shadow-xl space-x-6">
+               <div
+                 className="card w-72 bg-base-100 shadow-xl space-x-6"
+                 data-aos="fade-right"
+               >
                  <div className="card-body">
                    <svg
                      width="50"
@@ -41,7 +50,10 @@ const OneApp = () => {
                    </p>
                  </div>
                </div>
-               <div className="card w-72 bg-base-100 shadow-xl space-x-6">
+               <div
+                 className="card w-72 bg-base-100 shadow-xl space-x-6"
+                 data-aos="fade-right"
+               >
                  <div className="card-body">
                    <svg
                      width="50"
@@ -69,8 +81,11 @@ const OneApp = () => {
                    </p>
                  </div>
                </div>
-               
-               <div className="card w-72 bg-base-100 shadow-xl space-x-6 gap-5">
+
+               <div
+                 className="card w-72 bg-base-100 shadow-xl space-x-6 gap-5"
+                 data-aos="fade-right"
+               >
                  <div className="card-body">
                    <svg
                      width="50"
@@ -98,7 +113,10 @@ const OneApp = () => {
                    </p>
                  </div>
                </div>
-               <div className="card w-72 bg-base-100 shadow-xl">
+               <div
+                 className="card w-72 bg-base-100 shadow-xl"
+                 data-aos="fade-right"
+               >
                  <div className="card-body">
                    <svg
                      width="50"
@@ -126,7 +144,10 @@ const OneApp = () => {
                    </p>
                  </div>
                </div>
-               <div className="card w-72 bg-base-100 shadow-xl">
+               <div
+                 className="card w-72 bg-base-100 shadow-xl"
+                 data-aos="fade-right"
+               >
                  <div className="card-body">
                    <svg
                      width="50"
@@ -154,7 +175,10 @@ const OneApp = () => {
                    </p>
                  </div>
                </div>
-               <div className="card w-72 bg-base-100 shadow-xl">
+               <div
+                 className="card w-72 bg-base-100 shadow-xl"
+                 data-aos="fade-right"
+               >
                  <div className="card-body">
                    <svg
                      width="50"

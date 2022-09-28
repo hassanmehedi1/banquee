@@ -7,7 +7,7 @@ const Banner = () => {
       <div class="container px-6 py-16 mx-auto">
         <div class="items-center lg:flex">
           <div class="w-full lg:w-1/2 lg:ml-24">
-            <div class="lg:max-w-lg">
+            <div class="lg:max-w-lg text-center lg:text-start">
               <h1 class="text-3xl font-semibold text-gray-800  lg:text-7xl">
                 Banking <br /> Starts Here.
               </h1>
@@ -18,7 +18,7 @@ const Banner = () => {
               </p>
 
               <div class="grid grid-cols-1 mt-8 space-y-3 lg:space-y-0 lg:grid-cols-2 gap-4 lg:-ml-16">
-                <div className="flex justify-center items-center space-x-2 mr-3">
+                <div className="flex justify-center items-center space-x-2 mr-0 lg:mr-3">
                   <svg
                     width="26"
                     height="26"
@@ -34,7 +34,7 @@ const Banner = () => {
                   </svg>
                   <p>Instant Transfer</p>
                 </div>
-                <div className="flex justify-center items-center space-x-2 mr-3">
+                <div className="flex justify-center items-center space-x-2 mr-0 lg:mr-3">
                   <svg
                     width="26"
                     height="26"

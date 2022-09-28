@@ -1,12 +1,21 @@
 import React from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const SendAndReceive = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
    return (
      <div class="bg-secondly w-full">
        <div class="px-6 py-16 mx-auto">
          <div class="items-center lg:flex w-full">
            <div class="w-full lg:w-1/2 lg:ml-24">
-             <div class="lg:max-w-lg">
+             <div
+               class="lg:max-w-lg text-center lg:text-start"
+               data-aos="fade-right"
+             >
                <h1 class="text-3xl font-semibold text-gray-800  lg:text-6xl">
                  Send and receive <br /> money instantly
                </h1>
@@ -16,7 +25,7 @@ const SendAndReceive = () => {
                  eiusmod tempor incididunt ut labore et.
                </p>
 
-               <div class="grid grid-cols-1 mt-8 gap-y-4 justify-items-start">
+               <div class="grid grid-cols-1 mt-8 gap-y-4 justify-items-center lg:justify-items-start">
                  <div className="flex justify-center items-center space-x-2 mr-3">
                    <svg
                      width="26"
@@ -87,9 +96,12 @@ const SendAndReceive = () => {
              </div>
            </div>
 
-           <section className="lg:w-1/2 gap-y-2">
+           <section className="lg:w-1/2 gap-y-2" data-aos="fade-left">
              <div class="flex items-center justify-between mt-6 lg:mt-0  p-2 shadow-lg w-full rounded-lg bg-white mb-2 ">
-               <div className="flex justify-center items-center gap-x-2">
+               <div
+                 className="flex justify-center items-center gap-x-2"
+                 data-aos="fade-up"
+               >
                  <svg
                    width="50"
                    height="51"
@@ -113,7 +125,10 @@ const SendAndReceive = () => {
                </div>
              </div>
              <div class="flex items-center justify-between mt-6 lg:mt-0  p-2 shadow-lg w-full rounded-lg bg-white mb-2">
-               <div className="flex justify-center items-center gap-x-2">
+               <div
+                 className="flex justify-center items-center gap-x-2"
+                 data-aos="fade-up"
+               >
                  <svg
                    width="50"
                    height="51"
@@ -137,7 +152,10 @@ const SendAndReceive = () => {
                </div>
              </div>
              <div class="flex items-center justify-between mt-6 lg:mt-0  p-2 shadow-lg w-full rounded-lg bg-white mb-2">
-               <div className="flex justify-center items-center gap-x-2">
+               <div
+                 className="flex justify-center items-center gap-x-2"
+                 data-aos="fade-up"
+               >
                  <svg
                    width="50"
                    height="51"
@@ -161,7 +179,10 @@ const SendAndReceive = () => {
                </div>
              </div>
              <div class="flex items-center justify-between mt-6 lg:mt-0  p-2 shadow-lg w-full rounded-lg bg-white mb-2">
-               <div className="flex justify-center items-center gap-x-2">
+               <div
+                 className="flex justify-center items-center gap-x-2"
+                 data-aos="fade-up"
+               >
                  <svg
                    width="50"
                    height="51"
@@ -185,7 +206,10 @@ const SendAndReceive = () => {
                </div>
              </div>
              <div class="flex items-center justify-between mt-6 lg:mt-0  p-2 shadow-lg w-full rounded-lg bg-white mb-2">
-               <div className="flex justify-center items-center gap-x-2">
+               <div
+                 className="flex justify-center items-center gap-x-2"
+                 data-aos="fade-up"
+               >
                  <svg
                    width="50"
                    height="51"
@@ -209,7 +233,10 @@ const SendAndReceive = () => {
                </div>
              </div>
              <div class="flex items-center justify-between mt-6 lg:mt-0  p-2 shadow-lg w-full rounded-lg bg-white mb-2">
-               <div className="flex justify-center items-center gap-x-2">
+               <div
+                 className="flex justify-center items-center gap-x-2"
+                 data-aos="fade-up"
+               >
                  <svg
                    width="50"
                    height="51"
