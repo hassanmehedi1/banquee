@@ -84,7 +84,7 @@ const Banner = () => {
                 </div>
               </div>
               <div className="mt-14 flex justify-start items-center">
-                <a className="text-white bg-firstly px-3 py-2 rounded-lg cursor-pointer">
+                <a className="text-white bg-firstly px-3 py-2 rounded-lg cursor-pointer hover:bg-secondly hover:text-firstly">
                   Open Account
                 </a>
                 <div className="flex justify-center items-center space-x-2">

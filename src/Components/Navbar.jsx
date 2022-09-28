@@ -116,7 +116,7 @@ const Navbar = () => {
          </div>
          <div className="navbar-end flex space-x-3 invisible md:visible">
            <a className="font-bold text-xl text-firstly cursor-pointer">Login</a>
-           <a className="text-white bg-firstly px-3 py-2 rounded-lg cursor-pointer">Open Account</a>
+           <a className="text-white bg-firstly px-3 py-2 rounded-lg cursor-pointer hover:bg-secondly hover:text-firstly">Open Account</a>
          </div>
        </div>
      </div>
